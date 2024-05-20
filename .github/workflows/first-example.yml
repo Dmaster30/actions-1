@@ -13,5 +13,5 @@ jobs:
            ls -lrta
            cat README.md
         
-        - name: Generate ASCII network
-          run: cowsay -f dragon "run for cover, i am a dragon....RAWR" >> dragon.txt
+        - name: execute shell script
+          run: ./ascii-script.sh
