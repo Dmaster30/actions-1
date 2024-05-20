@@ -11,6 +11,7 @@ jobs:
           run: |
            echo "My first Github action job1"
            ls -lrta
+           ls -lrta .github/workflows/
 
         
         - name: execute shell script
