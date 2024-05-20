@@ -11,7 +11,9 @@ jobs:
           run: |
            echo "My first Github action job1"
            ls -lrta
-           cat README.md
+
         
         - name: execute shell script
-          run: ./ascii-script.sh
+          run: 
+            chmod +x ascii-script.sh
+            ./ascii-script.sh
