@@ -4,6 +4,9 @@ jobs:
     first_job:
         runs-on: ubuntu-22.04
         steps:
+        - name: Checkout
+          uses: actions/checkout@v4.1.6
+      
         - name: welcome message
           run: echo "My first Github action job1"
         
