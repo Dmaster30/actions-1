@@ -7,11 +7,11 @@ jobs:
         - name: Checkout
           uses: actions/checkout@main
       
-        - name: welcome message
-          run: echo "My first Github action job1"
+        - name: multiline commands
+          run: |
+           echo "My first Github action job1"
+           ls -lrta
+           cat README.md
         
-        - name: list files
-          run: ls
-        
-        - name: readfile
-          run: cat README.md
+        - name: Generate ASCII network
+          run: cowsay -f dragon "run for cover, i am a dragon....RAWR" >> dragon.txt
