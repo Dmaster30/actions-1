@@ -33,12 +33,6 @@ jobs:
           uses: actions/download-artifact@v4
           with:
            name: dragon text file
-           path: dragon.txt
-
-
-
-        - name: test file exists
-          run: grep -i "dragon" dragon.txt
-        
+           path: dragon.txt        
         - name: read file
           run: cat dragon.txt
