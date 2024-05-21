@@ -6,10 +6,15 @@ jobs:
         steps:
         - name: Checkout
           uses: actions/checkout@main
-        
+    install_job:
+        runs-on: ubuntu-22.04 
+        steps:   
         - name: install cowsay program
           run: sudo apt-get install cowsay -y
-        
+    
+        - name: sleep for 30 sec
+          run: sleep 30
+          
         - name: Generate ASCII network
           run: cowsay -f dragon "run for cover, i am a dragon....RAWR" >> dragon.txt
 
