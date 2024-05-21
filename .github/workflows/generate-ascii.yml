@@ -28,7 +28,8 @@ jobs:
         needs: install_job
         runs-on: ubuntu-22.04
         steps:
-          - uses: actions/download-artifact@v4
+          - name: download dragon file
+            uses: actions/download-artifact@v4
             with:
             name: my-dragon file
             path: dragon.txt
