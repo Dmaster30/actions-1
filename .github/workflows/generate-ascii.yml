@@ -29,6 +29,8 @@ jobs:
         needs: install_job
         runs-on: ubuntu-22.04
         steps:
+        - name: listing repo files
+          run: ls -ltra
         - name: download dragon file
           uses: actions/download-artifact@v4
           with:
@@ -40,6 +42,3 @@ jobs:
         
         - name: read file
           run: cat dragon.txt
-
-        - name: listing repo files
-          run: ls -ltra
