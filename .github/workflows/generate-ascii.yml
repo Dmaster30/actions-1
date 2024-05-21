@@ -29,14 +29,11 @@ jobs:
         needs: install_job
         runs-on: ubuntu-22.04
         steps:
-        - name: artifact location
-          run: ls -lrt   $GITHUB_WORKSPACE
-
         - name: download dragon file
           uses: actions/download-artifact@v4
           with:
-           name: my-dragon file
-           path: $GITHUB_WORKSPACE/dragon.txt
+           name: dragon text file
+           path: dragon.txt
 
 
 
